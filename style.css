@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav-bar{
+    height: 50px;
+}
+
+#nav-ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-ul>li{
+    padding: 12px 15px 0 15px;
+}
+#nav-ul>li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#nav-ul>li a:hover{
+    color: gray;
+}
+
+
+#intro{
+    background: url(bgpic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#heading{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 70px;
+}
+
+#intro-text{
+    padding: 0 0 0 200px;
+    font-size: 28px;
+    line-height: 1.8em;
+}
+
+.divbtn{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 50px 0;
+}
+
+.joinbtn{
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(23, 114, 0);
+    color: white;
+    width: 300px;
+    height: 60px;
+    border: none;
+}
+.joinbtn:hover{
+    background-color: rgb(43, 173, 10)
+}
+
+#instructor{
+    padding: 160px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#dpimg{
+    width: 200px;
+}
+
+#text-div{
+    width: 700px;
+}
+#coach{
+    text-decoration: underline;
+    padding: 0 0 40px 50px;
+}
+#main-text{
+    line-height: 2em;
+    font-size: 19px;
+}
+
+
+
+#class-lessons{
+    padding: 120px 0 0 0;
+}
+
+#class-heading{
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+.img{
+    width: 500px;
+    padding: 0;
+}
+
+#imagediv1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#imagediv2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+#imagediv3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+#imagediv4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.img-text{
+    width: 500px;
+    font-size: 25px;
+}
+
+#faq-heading{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.faqtext{
+    padding: 20px 5px;
+}
+
+.faq-question{
+    width: 600px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    padding-right: 6px;
+}
+
+#faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-answer{
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    max-width: 600px;
+}
+.faq-answer>p{
+    padding: 5px 5px;
+    line-height: 1.8em;
+}
+
+.faq-class.active .faq-answer{
+    max-height: 300px;
+}
+
+
+#footer-heading{
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-size: 30px;
+}
+
+
+#footer-main{
+    background-color: black;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#foot-text > p > a{
+    color: white;
+    text-decoration: none;
+}
+#foot-text > p > a:hover{
+    color: #f3f3f3;
+}
+
+#foot-icons{
+    font-size: 20px;
+}
+#foot-icons>a{
+    color: white;
+}
+#foot-icons>a:hover{
+    color: #f3f3f3;
+}
+
+#note-M{
+    color: red;
+}
+
+
+
+
+
+
+@media (max-width: 720px){
+    #heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    #intro-text{
+        padding: 0 0 0 20px;
+        font-size: 17px;
+        line-height: 1.8em;
+    }
+    .joinbtn{
+        font-size: 17px;
+        cursor: pointer;
+        background-color: rgb(23, 114, 0);
+        color: white;
+        width: 120px;
+        height: 40px;
+        border: none;
+    }
+    #instructor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #text-div{
+        width: 100%;
+        padding: 0 25px;
+    }
+    #main-text{
+        font-size: 16px;
+    }
+    #coach{
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+    #imagediv2{
+        flex-direction: row;
+        flex-direction: column;
+    }
+    #imagediv4{
+        flex-direction: row;
+        flex-direction: column;
+    }
+    .imagedivs{
+        flex-direction: column;
+    }
+    .img{
+        width: 300px;
+    }
+    .img-text{
+        font-size: 16px;
+        margin-top: 10px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .faq-class{
+        width: 100%;
+        padding:0 20px;
+    }
+    .faq-question{
+        width: 100%;
+    }
+    .faq-answer{
+        width: 100%;
+    }
+    #footer-heading{
+        font-size: 20px;
+    }
+    #nav-ul>li a{
+        font-size: 16px;
+    }
+
+}
